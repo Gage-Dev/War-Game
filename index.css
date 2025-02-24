@@ -76,3 +76,72 @@ div.top > p {
 button:disabled {
     cursor: not-allowed;
 }
+
+@media screen and (max-width: 768px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--green);
+        height: 80vh;
+        font-family: 'Atkinson Hyperlegible Next', sans-serif;
+        overflow-x: hidden;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    h1, h3, p {
+        color: var(--white);
+    }
+    
+    button {
+        background-color: var(--yellow);
+        border: none;
+        border-radius: 20px;
+        padding: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: large;
+    }
+    
+    button#new-deck {
+        align-self: flex-start;
+    }
+    
+    #draw-cards {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .card-slot {
+        border: 2px solid var(--black);
+        border-radius: 11px;
+        height: 150px;
+        width: calc(150px * 5 / 7);
+        margin: 0 auto;
+    }
+    
+    .card-slot:nth-of-type(1) {
+        margin-bottom: 15px;
+    }
+    
+    img.card {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .top {
+        display: flex;
+        align-items: flex-start;
+        align-self: flex-start;
+    }
+    
+    div.top > p {
+        align-self: center;
+        margin-left: 15px;
+    }
+}
