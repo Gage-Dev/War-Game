@@ -97,19 +97,25 @@ button:disabled {
     h1, h3, p {
         color: var(--white);
     }
+
+    h1 {
+        margin-bottom: 0px;
+    }
     
     button {
         background-color: var(--yellow);
         border: none;
-        border-radius: 20px;
-        padding: 20px;
+        border-radius: 10px;
+        padding: 10px;
         cursor: pointer;
         font-weight: bold;
         font-size: large;
+        color:rgb(22, 22, 22);
     }
     
     button#new-deck {
         align-self: flex-start;
+        margin-bottom: -10px;
     }
     
     #draw-cards {
@@ -119,7 +125,7 @@ button:disabled {
     
     .card-slot {
         border: 2px solid var(--black);
-        border-radius: 11px;
+        border-radius: 10px;
         height: 150px;
         width: calc(150px * 5 / 7);
         margin: 0 auto;
