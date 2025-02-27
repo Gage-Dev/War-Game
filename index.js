@@ -48,7 +48,7 @@ drawCards.addEventListener("click", () => {
             if (data.remaining === 0) {
                 drawCards.disabled = true
                 if (computerScore > myScore) {
-                    header.textContent = "The Computer won the game!"
+                    header.textContent = "Computer won the game!"
                 } else if (myScore > computerScore) {
                     header.textContent = "You won the game!"
                 } else {
